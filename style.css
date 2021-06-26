@@ -1,12 +1,11 @@
-html,body{
-    height: 95%
-}
+/* i'm ahmed */
 body{
-    background-color: aliceblue;
+    background-color:rgb(247, 238, 238);
     padding-right:20%;
     padding-left:20%;
-
+    padding-top:2% ;
 }
+/* img for ahmed */
 .img{
     display: block;
     margin-left: auto;
@@ -14,28 +13,67 @@ body{
     width: 30%;
 
 }
+/* h2 for text(ahmed saed) */
 h2{
     color: #303030;
+    text-align: center;
+    font-family:'Brush Script MT', cursive;}
+h2:hover{
+    color: rgb(202, 0, 0);
 }
-/*you yube*/
+/*you yube icon*/
+h2:active{
+    color: #303030;
+
+}
 .y{
     position:absolute;
     bottom:10px ;
     right:40%;
-    
 }
-/*face book*/
+/*face book icon*/
 .f{
     position:absolute;
     bottom:10px ;
     left:40%;
 }
+/*  h3 for text(about me)  */
 h3{
-    position: absolute;
-    top:45%;
+    /* position: absolute;
+    top:45%; */
+    right: 80%;
+    color: rgb(24, 24, 24);
+    font-family:'Brush Script MT', cursive;
 }
+h3:hover{
+    color: rgb(202, 0, 0);
+}
+/* p for text(about me) */
 .about-me{
-    float: left;
-    position: absolute;
-    top: 50%;
+    text-align: left;
+    top:50%;
+    color: rgb(24,24,24);
+    font-family:'Brush Script MT', cursive;
+    line-height: 1.6;
+}
+.about-me:hover{
+    color:#f00;
+}
+/* face book icon color */
+.face-book-color{
+    color: rgb(24,24,24);
+
+}
+.face-book-color:hover {
+    color:#0b84ed;
+}
+/* you tube icon color */
+.you-tube-color{
+    color: rgb(24,24,24);
+}
+.you-tube-color:hover{
+    color: rgb(255, 38, 0);
+}
+img:hover{
+    content:url("AHMED.png");
 }
