@@ -1,79 +1,124 @@
-/* i'm ahmed */
-body{
-    background-color:rgb(247, 238, 238);
-    padding-right:20%;
-    padding-left:20%;
-    padding-top:2% ;
-}
-/* img for ahmed */
-.img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-
-}
-/* h2 for text(ahmed saed) */
-h2{
-    color: #303030;
-    text-align: center;
-    font-family:'Brush Script MT', cursive;}
-h2:hover{
-    color: rgb(202, 0, 0);
-}
-/*you yube icon*/
-h2:active{
-    color: #303030;
-
-}
-.y{
-    position:absolute;
-    bottom:10px ;
-    right:40%;
-}
-/*face book icon*/
-.f{
-    position:absolute;
-    bottom:10px ;
-    left:40%;
-}
-/*  h3 for text(about me)  */
-h3{
-    /* position: absolute;
-    top:45%; */
-    right: 80%;
-    color: rgb(24, 24, 24);
-    font-family:'Brush Script MT', cursive;
-}
-h3:hover{
-    color: rgb(202, 0, 0);
-}
-/* p for text(about me) */
-.about-me{
-    text-align: left;
-    top:50%;
-    color: rgb(24,24,24);
-    font-family:'Brush Script MT', cursive;
-    line-height: 1.6;
-}
-.about-me:hover{
-    color:#f00;
-}
-/* face book icon color */
-.face-book-color{
-    color: rgb(24,24,24);
-
-}
-.face-book-color:hover {
-    color:#0b84ed;
-}
-/* you tube icon color */
-.you-tube-color{
-    color: rgb(24,24,24);
-}
-.you-tube-color:hover{
-    color: rgb(255, 38, 0);
-}
-img:hover{
-    content:url("AHMED.png");
-}
+    * {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    body {
+        padding-left: 20%;
+        padding-right: 20%;
+        font-family: 'Brush Script MT', cursive;
+        background-color: rgb(247, 238, 238);
+    }
+    
+    img {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        width: 15%;
+        margin-top: 15px;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        transition: .6s;
+        -webkit-transition: .6s;
+        -moz-transition: .6s;
+        -ms-transition: .6s;
+        -o-transition: .6s;
+    }
+    
+    img:hover {
+        transform: scale(1.12, 1.12);
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -webkit-transform: scale(1.12, 1.12);
+        -moz-transform: scale(1.12, 1.12);
+        -ms-transform: scale(1.12, 1.12);
+        -o-transform: scale(1.12, 1.12);
+    }
+    
+    h2 {
+        margin-top: 20px;
+        color: #333;
+        font-weight: bold;
+    }
+    
+    h3 {
+        margin-top: 20px;
+        color: #333;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    @media (max-width: 576px) {
+        img {
+            width: 95%;
+            margin-top: 40%;
+        }
+        h2 {
+            margin-top: 91px;
+            color: #333;
+            font-weight: bold;
+            font-size: 68px;
+        }
+        h3 {
+            margin-top: 20px;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+            font-size: 52px;
+        }
+        p {
+            font-size: 36px;
+            margin-top: 37px;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        img {
+            width: 95%;
+            margin-top: 40%;
+        }
+        h2 {
+            margin-top: 91px;
+            color: #333;
+            font-weight: bold;
+            font-size: 68px;
+        }
+        h3 {
+            margin-top: 20px;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+            font-size: 52px;
+        }
+        p {
+            font-size: 36px;
+            margin-top: 37px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        img {
+            width: 28%;
+            margin-top: 30px;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #333;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        h3 {
+            margin-top: 40px;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+            font-size: 25px;
+        }
+        p {
+            text-align: left;
+            font-size: 18px;
+        }
+    }
