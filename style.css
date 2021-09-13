@@ -6,9 +6,13 @@
   --main-duration: 0.5s;
 }
 
-::-webkit-scrollbar {width: 15px;}
+::-webkit-scrollbar {
+  width: 15px;
+}
 
-::-webkit-scrollbar-track {background-color: #e9e9e9;}
+::-webkit-scrollbar-track {
+  background-color: #e9e9e9;
+}
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--secondary-color);
@@ -20,7 +24,13 @@
   -o-border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover{background-color: #999;}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #888;
+}
 
 * {
   font-family: "Tahoma";
@@ -125,8 +135,107 @@ html {
   }
 }
 
+header {
+  padding: 10px;
+  background-color: var(--section-background);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  width: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+header .links {
+  position: relative;
+}
+
+header .links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+
+header .links .icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+header .links .icon span {
+  background-color: #333;
+  margin-bottom: 5px;
+  height: 2px;
+}
+
+header .links .icon span:first-child {
+  width: 100%;
+}
+
+header .links .icon span:nth-child(2) {
+  width: 60%;
+  transition: .3s;
+}
+
+header .links .icon span:last-child {
+  width: 100%;
+}
+
+header .links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  top: calc(100% + 15px);
+  display: none;
+  z-index: 1;
+  transition: .5s;
+}
+
+header .links ul::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+}
+
+header .links:hover ul {
+  display: block;
+}
+
+header .links ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  transition: .3s;
+  text-align: left;
+}
+
+header .links ul li a:hover {
+  padding-left: 25px;
+}
+
+header .links ul li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
+
 .landing {
-  height: 100vh;
+  height: calc(100vh - 64px);
 }
 
 .landing .container .text h1 {
