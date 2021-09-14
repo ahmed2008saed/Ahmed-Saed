@@ -2,7 +2,7 @@
   --main-color: #444;
   --secondary-color: #777;
   --section-padding: 60px;
-  --section-background: #f5f5f5;
+  --section-background: #f6f6f6;
   --main-duration: 0.5s;
 }
 
@@ -193,7 +193,7 @@ header .links ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
   position: absolute;
   right: 0;
   min-width: 200px;
@@ -207,7 +207,7 @@ header .links ul::before {
   content: "";
   border-width: 10px;
   border-style: solid;
-  border-color: transparent transparent #f6f6f6 transparent;
+  border-color: transparent transparent #f2f2f2 transparent;
   position: absolute;
   right: 5px;
   top: -20px;
@@ -318,10 +318,35 @@ header .links ul li:not(:last-child) a {
   }
 }
 
-.portfolio {
+.features {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
   background-color: var(--section-background);
+}
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+.features .feat {
+  padding: 20px;
+  text-align: center;
+}
+.features .feat i {color: #1ea3e0;}
+.features .feat h3 {
+  font-weight: 800;
+  margin: 30px 0;
+  color: var(--main-color);
+}
+.features .feat p {
+  line-height: 1.8;
+  color: var(--secondary-color);
+  font-size: 17px;
+}
+
+.portfolio {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 
 .portfolio .portfolio-content {
@@ -332,7 +357,7 @@ header .links ul li:not(:last-child) a {
 }
 
 .portfolio .portfolio-content .card {
-  background-color: #fff;
+  background-color: var(--section-background);
   overflow: hidden;
 }
 
@@ -372,6 +397,7 @@ header .links ul li:not(:last-child) a {
 .about {
   padding-top: var(--section-padding);
   padding-bottom: calc(var(--section-padding) + 60px);
+  background-color: var(--section-background);
 }
 
 .about .about-content {
@@ -482,7 +508,6 @@ header .links ul li:not(:last-child) a {
 .contact {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
-  background-color: var(--section-background);
 }
 
 .contact .info {
