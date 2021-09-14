@@ -417,6 +417,7 @@ header .links ul li:not(:last-child) a {
   position: relative;
   width: 250px;
   height: 375px;
+  z-index: 1;
 }
 
 @media (max-width: 991px) {
