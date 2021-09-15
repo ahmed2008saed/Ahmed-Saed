@@ -1,4 +1,32 @@
-:root { 
+#myBtn {
+  transition: var(--main-duration);
+  -webkit-transition: var(--main-duration);
+  -moz-transition: var(--main-duration);
+  -ms-transition: var(--main-duration);
+  -o-transition: var(--main-duration);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: var(--main-color);
+  font-size: 18px;
+  cursor: pointer;
+  position: fixed;
+  color: white;
+  outline: none;
+  display: none;
+  padding: 10px;
+  bottom: 20px;
+  border: none;
+  right: 30px;
+  z-index: 99;
+
+}
+
+#myBtn:hover {background-color: var(--secondary-color);}
+
+:root {
   --main-color: #444;
   --secondary-color: #777;
   --section-padding: 60px;
@@ -323,21 +351,28 @@ header .links ul li:not(:last-child) a {
   padding-bottom: var(--section-padding);
   background-color: var(--section-background);
 }
+
 .features .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
 }
+
 .features .feat {
   padding: 20px;
   text-align: center;
 }
-.features .feat i {color: #1ea3e0;}
+
+.features .feat i {
+  color: #1ea3e0;
+}
+
 .features .feat h3 {
   font-weight: 800;
   margin: 30px 0;
   color: var(--main-color);
 }
+
 .features .feat p {
   line-height: 1.8;
   color: var(--secondary-color);
