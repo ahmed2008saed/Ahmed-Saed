@@ -282,7 +282,7 @@ header .links ul li:not(:last-child) a {
 
 .landing {
   height: 100vh;
-  background-image: url(../images/landing.jpg);
+  background-image: url(landing.jpg);
   background-color: rgba(0, 0, 0, 0.856);
   background-size: cover;
 }
