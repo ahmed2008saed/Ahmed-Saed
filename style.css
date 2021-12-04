@@ -264,7 +264,7 @@ header nav .icon span {
 }
 
 .landing {
-    background-image: url(../images/landing.jpg);
+    background-image: url(landing.jpg);
     background-size: cover;
     height: 100vh;
 }
