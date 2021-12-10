@@ -3,6 +3,7 @@
     --main-color-two: #2196f3;
     --secondary-color: #777;
     --section-padding: 60px;
+    --main-duration: 0.5s;
 }
 
 #myBtn {
@@ -140,12 +141,12 @@ header {
 
 header .container img {
     width: 40px;
-    box-shadow: rgba(33, 149, 243, 0.204) 8px 8px 30px, rgba(33, 149, 243, 0.204) -8px -8px 30px;
     transition: var(--main-duration);
     -webkit-transition: var(--main-duration);
     -moz-transition: var(--main-duration);
     -ms-transition: var(--main-duration);
     -o-transition: var(--main-duration);
+    border: 1px solid #eee;
 }
 
 header .container nav ul li {
