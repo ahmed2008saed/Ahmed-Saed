@@ -1,17 +1,6 @@
-mybutton = document.getElementById("myBtn");
-
-window.onscroll = function () { scrollFunction() };
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
-}
-
-function topFunction() {
-    document.body.scrollTop = 0; document.documentElement.scrollTop = 0;
-}
-
-console.error("copyright Ahmed اتكل علي الله يلاه من هنا")
+console.log("%cAhmed %cSa%c3%ced %cSayed"
+,"color: #f00; font-size: 40px;"
+,"color: #ccc; font-size: 40px;"
+,"color: #ffee00; font-size: 40px;"
+,"color: #ccc; font-size: 40px;"
+,"color: #555; font-size: 40px;");
