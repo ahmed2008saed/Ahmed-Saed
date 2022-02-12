@@ -664,14 +664,30 @@ header nav .icon span {
 footer {
     background-color: #191919;
     color: var(--main-color);
-    padding: 30px 10px;
+    padding: 15px 0;
     font-size: 18px;
     text-transform: capitalize;
-    text-align: center;
 }
 
-footer span {
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .container h1 {
+    font-size: 20px;
+}
+
+footer .container h1 span {
     font-weight: 600;
-    color: var(--main-color-two);
+    color: #00b7ff;
     user-select: text;
+}
+
+
+@media (max-width: 767px) {
+    footer .container h1:last-child {
+        display: none;
+    }
 }
