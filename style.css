@@ -553,7 +553,7 @@ header nav .icon span {
 }
 
 .contact .info .facebook:hover {
-    color: var(--main-color-two);
+    color: #17AAFF;
 }
 
 .contact .info .instagram:hover {
@@ -689,5 +689,8 @@ footer .container h1 span {
 @media (max-width: 767px) {
     footer .container h1:last-child {
         display: none;
+    }
+    footer .container h1 span {
+        user-select: none;
     }
 }
