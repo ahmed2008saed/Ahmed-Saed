@@ -1,10 +1,14 @@
+console.log("%cCopyright %c© %cAhmed Saed 2022"
+,"color: #555; font-size: 40px; font-family: Tahoma;"
+,"color: #dc3545; font-size: 40px; font-family: Tahoma;"
+,"color: #555; font-size: 40px; font-family: Tahoma;");
+
 console.log("%cAhmed %cSa%c3%ced %cSayed"
-,"color: #f00; font-size: 40px;"
-,"color: #ccc; font-size: 40px;"
-,"color: #ffee00; font-size: 40px;"
-,"color: #ccc; font-size: 40px;"
-,"color: #555; font-size: 40px;");
+,"color: #f00; font-size: 40px; font-family: Tahoma;"
+,"color: #ccc; font-size: 40px; font-family: Tahoma;"
+,"color: #ffee00; font-size: 40px; font-family: Tahoma;"
+,"color: #ccc; font-size: 40px; font-family: Tahoma;"
+,"color: #555; font-size: 40px; font-family: Tahoma;");
 
-console.log("متكتبش حاجا هنا ماشي")
-
-console.log("Copyright © Ahmed Saed 2022")
+console.log("%cمتكتبش حاجا هنا ماشي"
+,"color: #dc3545; font-size: 25px; font-family: Tahoma;");
