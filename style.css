@@ -244,7 +244,6 @@ header nav .icon span {
     background-image: url(landing.jpg);
     background-size: cover;
     height: 100vh;
-    text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -345,6 +344,13 @@ header nav .icon span {
     -o-border-radius: 10px;
 }
 
+
+@media (max-width: 767px) {
+    .my-work .my-work-content .card {
+        text-align: center;
+    }
+}
+
 .my-work .my-work-content .card img {
     width: 100%;
     transition: var(--main-duration);
@@ -360,6 +366,16 @@ header nav .icon span {
     -moz-transform: scale(1.03);
     -ms-transform: scale(1.03);
     -o-transform: scale(1.03);
+}
+
+@media (max-width: 991px) {
+    .my-work .my-work-content .card img:hover {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
 }
 
 .my-work .my-work-content .card .info {
@@ -480,7 +496,7 @@ header nav .icon span {
     flex-basis: calc(100% - 500px);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .about .about-content .text {
         text-align: center;
     }
@@ -690,6 +706,7 @@ footer .container h1 span {
     footer .container h1:last-child {
         display: none;
     }
+
     footer .container h1 span {
         user-select: none;
     }
