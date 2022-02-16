@@ -3,7 +3,7 @@
     --main-color-two: #0968b6;
     --secondary-color: #c5c5c5;
     --section-padding: 60px;
-    --main-duration: 0.5s;
+    --main-duration: .5s;
 }
 
 .main-heading h2 {
@@ -124,7 +124,7 @@ header .container nav ul li {
     list-style: none;
     display: inline;
     text-transform: capitalize;
-    padding-left: 10px;
+    padding-left: 30px;
     font-size: 14px;
 }
 
@@ -240,18 +240,21 @@ header nav .icon span {
     }
 }
 
-.landing {
+.landing .image {
+    background-color: #333;
     background-image: url(landing.jpg);
     background-size: cover;
+    filter: grayscale(70%);
+    -webkit-filter: grayscale(70%);
     height: 100vh;
 }
 
 @media (max-width: 767px) {
-    .landing {
-        background-image: url(landing2.jpg);
+    .landing .image {
+        filter: grayscale(20%);
+        -webkit-filter: grayscale(20%);
     }
 }
-
 
 .landing .intro-text {
     left: 50%;
@@ -264,6 +267,7 @@ header nav .icon span {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+    z-index: 1;
 
 }
 
@@ -513,6 +517,12 @@ header nav .icon span {
     user-select: text;
 }
 
+@media (max-width: 991px) {
+    .about .about-content .text p:first-of-type span {
+        user-select: none;
+    }
+}
+
 .about .about-content .text hr {
     width: 50%;
     display: inline-block;
@@ -523,6 +533,10 @@ header nav .icon span {
     line-height: 2;
     color: #999;
     margin-top: 44px;
+}
+
+.about .about-content .text p:last-of-type span {
+    user-select: text;
 }
 
 .contact {
