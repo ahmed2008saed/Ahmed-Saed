@@ -398,9 +398,21 @@ header nav .icon span {
 
 .my-work .my-work-content .card .info p {
     color: var(--secondary-color);
-    line-height: 1.6;
+    line-height: 1.2;
     margin-bottom: 0;
     text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.my-work .my-work-content .card .info hr {
+    min-width: 100%;
+    color: var(--secondary-color);
+}
+
+.my-work .my-work-content .card .info a {
+    text-decoration: none;
+    color: #00b7ff;
+    margin-top: 90px;
 }
 
 .about {
