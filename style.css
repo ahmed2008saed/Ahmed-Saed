@@ -6,14 +6,6 @@
     --main-duration: .5s;
 }
 
-link{
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
 .main-title {
     color: var(--main-color);
     text-transform: uppercase;
@@ -25,6 +17,10 @@ link{
     position: relative;
     z-index: 1;
     transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .main-title::before,
@@ -58,9 +54,14 @@ link{
 }
 
 .main-title:hover {
-    color: #f9f9f9;
-    border: 2px solid #f9f9f9;
+    transition: var(--main-duration);
+    color: #fdfdfd;
+    border: 2px solid transparent;
     transition-delay: 0.5s;
+    -webkit-transition: var(--main-duration);
+    -moz-transition: var(--main-duration);
+    -ms-transition: var(--main-duration);
+    -o-transition: var(--main-duration);
 }
 
 
@@ -145,6 +146,7 @@ header .container nav ul li a {
     -moz-transition: var(--main-duration);
     -ms-transition: var(--main-duration);
     -o-transition: var(--main-duration);
+    font-size: 17px;
 }
 
 header .container nav ul li a:hover {
@@ -183,7 +185,7 @@ header nav .icon span {
         list-style: none;
         margin: 0;
         padding: 0;
-        background-color: #232323;
+        background-color: #222;
         position: absolute;
         right: 25px;
         min-width: 200px;
@@ -206,7 +208,7 @@ header nav .icon span {
         content: "";
         border-width: 10px;
         border-style: solid;
-        border-color: transparent transparent #232323 transparent;
+        border-color: transparent transparent #222 transparent;
         position: absolute;
         right: 5px;
         top: -20px;
@@ -314,7 +316,7 @@ header nav .icon span {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--main-color);
     font-size: 25px;
     transition: var(--main-duration);
     -webkit-transition: var(--main-duration);
@@ -324,8 +326,8 @@ header nav .icon span {
 }
 
 .landing .intro-text a:hover {
-    background-color: #258ee4;
-    color: #bdbbbb;
+    background-color: var(--main-color);
+    color: var(--main-color-two);
 }
 
 .my-work {
@@ -543,10 +545,76 @@ header nav .icon span {
     user-select: text;
 }
 
-.contact {
+.our-skills {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
     background-color: #232323;
+    position: relative;
+}
+
+.our-skills .container {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .our-skills img {
+        display: none;
+    }
+}
+
+.our-skills .skills {
+    flex: 1;
+}
+
+.our-skills .skill h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-color);
+}
+
+.our-skills .skill h3 span {
+    font-size: 12px;
+    border: 1px solid var(--main-color);
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: var(--secondary-color);
+}
+
+.our-skills .skill .the-progress {
+    height: 30px;
+    background-color: #eee;
+    position: relative;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.our-skills .skill .the-progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--main-color-two);
+    transition: width 1s linear;
+    -webkit-transition: width 1s linear;
+    -moz-transition: width 1s linear;
+    -ms-transition: width 1s linear;
+    -o-transition: width 1s linear;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: #191919;
     text-align: center;
 }
 
@@ -680,7 +748,6 @@ header nav .icon span {
 .contact .container .content .card .info hr {
     width: 3rem;
     margin-top: 20px;
-    color: var(--main-color-two);
 }
 
 .contact .container .content .card .info .select {
@@ -697,7 +764,7 @@ header nav .icon span {
 
 
 footer {
-    background-color: #191919;
+    background-color: #232323;
     color: var(--main-color);
     padding: 15px 0;
     font-size: 18px;
