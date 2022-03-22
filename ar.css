@@ -97,7 +97,7 @@
 
 * {
     font-family: "Tahoma";
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Cairo', sans-serif;
     user-select: none;
     font-weight: 450;
     text-transform: capitalize;
@@ -117,6 +117,12 @@ header {
     padding: 10px;
     background-color: #111;
     z-index: 6;
+    
+}
+
+
+header .container {
+    flex-direction: row-reverse;
 }
 
 header .container img {
@@ -132,18 +138,11 @@ header .container nav ul li {
     list-style: none;
     display: inline;
     text-transform: capitalize;
-    padding-left: 30px;
+    padding-top: 30px;
     font-size: 14px;
 }
-
-@media (max-width: 768px) {
-    header .container nav ul li {
-        padding-left: 0px;
-    }
-}
-
 header .container nav ul a {
-    /* margin-right: 30px; */
+    margin-left: 30px;
     color: #888;
     text-decoration: none;
     transition: var(--main-duration);
@@ -156,6 +155,11 @@ header .container nav ul a:hover {
     color: var(--main-color-two);
 }
 
+@media (max-width: 768px) {
+    header .container nav ul li {
+        padding-left: 0px;
+    }
+}
 
 header .container nav ul li a {
     text-decoration: none;
@@ -171,8 +175,6 @@ header .container nav ul li a {
 header .container nav ul li a:hover {
     color: #00b7ff;
 }
-
-
 
 header nav .icon {
     width: 30px;
@@ -414,6 +416,7 @@ header nav .icon span {
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 
 @media (max-width: 991px) {
@@ -434,8 +437,8 @@ header nav .icon span {
         margin: 0 auto 60px;
     }
 }
-
-.about .about-content .image::before {
+/* 
+.about .about-content .image::after {
     content: "";
     position: absolute;
     background-color: #333;
@@ -451,7 +454,7 @@ header nav .icon span {
     -o-border-radius: 15px;
 }
 
-.about .about-content .image::after {
+.about .about-content .image::before {
     content: "";
     top: -40px;
     position: absolute;
@@ -467,7 +470,7 @@ header nav .icon span {
     .about .image::before, .about .image::after {
         display: none;
     }
-}
+} */
 
 .about .about-content .image img {
     max-width: 100%;
@@ -624,6 +627,7 @@ header nav .icon span {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 
 .contact .container .info .img img {
